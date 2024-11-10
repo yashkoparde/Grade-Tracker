@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Grade Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Enhanced Grade Tracker</h1>
+  </header>
+
+  <section id="profile-section">
+    <h2>Create a New Profile</h2>
+    <input type="text" id="profile-name" placeholder="Enter profile name">
+    <button onclick="createProfile()">Create Profile</button>
+  </section>
+
+  <section id="profile-list">
+    <h2>Select a Profile</h2>
+    <ul id="profiles"></ul>
+  </section>
+
+  <section id="tracker-section" style="display: none;">
+    <h2 id="tracker-header"></h2>
+    <input type="text" id="exam-name" placeholder="Enter exam name">
+    <input type="text" id="subject" placeholder="Enter subject name">
+    <input type="number" id="grade" placeholder="Enter grade" min="0" max="100">
+    <button onclick="addGrade()">Add Exam</button>
+
+    <h3>Grades</h3>
+    <table id="grades-table">
+      <thead>
+        <tr>
+          <th>Exam</th>
+          <th>Subject</th>
+          <th>Grade</th>
+          <th>Remark</th>
+          <th>Future Plan</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button onclick="goBack()">Back to Profiles</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

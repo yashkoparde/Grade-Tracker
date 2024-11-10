@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f8ff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+h1 {
+  color: #0073e6;
+}
+
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: calc(100% - 1rem);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #0073e6;
+  color: white;
+}
+
+button.delete-profile-button {
+  margin-left: 10px;
+  padding: 0.2rem 0.5rem;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.delete-profile-button:hover {
+  background-color: #b30000;
+}
+
+button.delete-button {
+  padding: 0.3rem;
+  margin: 0 0.1rem;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.delete-button:hover {
+  background-color: #b30000;
+}
