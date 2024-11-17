@@ -1,46 +1,40 @@
 body {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
-  color: #f8f9fa;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6a65, #ff805d);
+  background: linear-gradient(90deg, #ff6b6b, #48c6ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textAnimate 5s linear infinite;
-}
-
-@keyframes textAnimate {
-  0% { background-position: 0%; }
-  100% { background-position: 200%; }
+  animation: gradientText 3s infinite linear;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border: none;
+  backdrop-filter: blur(8px);
 }
 
-table {
-  border-collapse: separate;
-  border-spacing: 0 10px;
+#examSlabs .card {
+  margin-bottom: 1rem;
 }
 
-.table-bordered th, .table-bordered td {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+textarea {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 button {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   transform: scale(1.05);
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
