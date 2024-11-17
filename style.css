@@ -1,97 +1,46 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #f8f9fa;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background: #f0f8ff;
-  color: #333;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  text-align: center;
-  margin-top: 1rem;
+.text-gradient {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6a65, #ff805d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimate 5s linear infinite;
 }
 
-h1 {
-  color: #0073e6;
+@keyframes textAnimate {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
 }
 
-section {
-  width: 80%;
-  max-width: 600px;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  background-color: #0073e6;
-  color: white;
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005bb5;
-}
-
-input {
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  width: calc(100% - 1rem);
-  border: 1px solid #ddd;
-  border-radius: 5px;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
+  border-collapse: separate;
+  border-spacing: 0 10px;
 }
 
-th, td {
-  padding: 0.5rem;
-  text-align: left;
-  border: 1px solid #ddd;
+.table-bordered th, .table-bordered td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-th {
-  background-color: #0073e6;
-  color: white;
+button {
+  transition: all 0.3s ease-in-out;
 }
 
-button.delete-profile-button {
-  margin-left: 10px;
-  padding: 0.2rem 0.5rem;
-  background-color: #e60000;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button.delete-profile-button:hover {
-  background-color: #b30000;
-}
-
-button.delete-button {
-  padding: 0.3rem;
-  margin: 0 0.1rem;
-  background-color: #e60000;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button.delete-button:hover {
-  background-color: #b30000;
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
